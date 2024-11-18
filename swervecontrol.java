@@ -13,3 +13,12 @@ public class SwerveModule {
         steerMotor.set(angle); // Dönüş açısı kontrolü
     }
 }
+
+// Chassis Speeds (Şasi Hızları) kısmı
+
+import edu.wpi.first.math.kinematics.ChassisSpeeds;
+
+ChassisSpeeds speeds = new ChassisSpeeds(vx, vy, omega);
+// vx: İleri/geri hız
+// vy: Yanlara doğru hız
+// omega: Açısal hız (dönüş)
